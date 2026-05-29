@@ -1,7 +1,8 @@
-# Jogo de Adivinhação
+# Guessing Game
 
-# No jogo, o usuário precisa adivinhar um número secreto.
-# Ele pode tentar várias vezes até acertar.
+# While playing, the user needs to guess a secret number.
+# They can try as many times as they want until they guess the right one.
+
 
 secret_number = 5
 attempt = 0
