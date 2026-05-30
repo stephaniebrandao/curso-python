@@ -33,3 +33,36 @@ To run this project, you only need Python installed on your machine:
 2. **Run the script directly from your terminal:**
    ```bash
    python3 projeto_python.py
+
+-----
+
+# 💰 ATM Simulation
+
+A simple, interactive command-line Python script that simulates the core functionality of an Automated Teller Machine (ATM). The user starts with a predefined balance and can perform multiple withdrawals until they choose to exit or their balance hits zero.
+
+## 🚀 Features
+
+- **Initial Balance:** Starts with a fixed balance of `500€`.
+- **Input Validation:**
+  - Rejects negative withdrawal amounts.
+  - Rejects withdrawal requests that exceed the available balance.
+  - Requires integer values for withdrawals.
+- **Dynamic Control Flow:** Keeps processing transactions using a `while` loop until the user types `0` to quit or completely drains the account.
+
+## 🛠️ How the Logic Works
+
+The application runs a continuous loop that checks the user's available funds and processes inputs based on four specific states:
+
+1. **Exit Trigger:** If the input is `0`, the loop terminates immediately via a `break` statement.
+2. **Negative Value Guard:** If the input is less than `0`, it alerts the user and refuses the transaction.
+3. **Overdraft Protection:** If the input exceeds the current balance, it notifies the user of insufficient funds.
+4. **Successful Transaction:** If all guards pass, the requested amount is deducted from the balance, and the new total is displayed.
+
+## 📦 How to Run
+
+1. Make sure you have Python 3 installed on your system.
+2. Save the code into a file named `projeto_python_2.py`.
+3. Open your terminal or command prompt, navigate to the folder where the file is saved, and execute:
+   
+   ```bash
+   python3 projeto_python_2.py
