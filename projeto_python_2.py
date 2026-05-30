@@ -10,7 +10,7 @@ while balance > 0:
     if withdraw == 0:
         break
     elif withdraw < 0:
-        print("Invalide value! Type a positive number!")
+        print("Invalid value! Type a positive number!")
     elif withdraw > balance:
         print("Insufficient funds! Withdrawal failed.")
     else:
