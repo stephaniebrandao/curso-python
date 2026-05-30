@@ -5,7 +5,7 @@
 balance = 500
 
 while balance > 0:
-    withdraw = int(input("Informe o valor do saque (ou digite 0 para sair): "))
+    withdraw = int(input("Enter the withdrawal amount (or enter 0 to exit): "))
 
     if withdraw == 0:
         break
